@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marquee</title>
+  <header style="grid-area: header; background: #0d0d0d; padding: 18px 25px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #222; position: sticky; top: 0; z-index: 999;">
+            <div class="logo" style="display: flex; align-items: center; gap: 8px;">
+                <img src="../../wallpapers/Hrlogo.jpg" alt="logo" style="width: 45px; height: 45px; border-radius: 50%;">
+                <span class="logotext" style="color: white; font-size: 1.2rem; font-weight: 600; letter-spacing: 1px;">Roy</span>
+            </div>
+            <div class="search-box" style="display: flex; align-items: center; background: #141414; padding: 6px 10px; border-radius: 25px; border: 1px solid #333; width: 200px;">
+                <input type="text" placeholder="Search collections, styles..." style="background: transparent; border: none; outline: none; color: #fff; font-size: 0.95rem; width: 100%;">
+                <button style="background: none; border: none; color: #d42b2b; font-size: 1rem; cursor: pointer; transition: 0.3s;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='#d42b2b';">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div class="nav-links" style="display: flex; align-items: center; gap: 20px; padding-right: 40px;">
+                <a href="index.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">Home</a>
+                <a href="tags.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">Tags</a>
+                <a href="marquee.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">Marquee</a>
+                <a href="list.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">List</a>
+                <a href="multimedia.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">Multimedia</a>
+                <a href="table.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">Table</a>
+            </div>
+        </header>
+</head>
+<body style="background-color: black; color: white;">
+    <h2>Marquee: </h2>
+    <pre>   It is used to create scroll text and image.
+        <span><h2>Attributes: </h2></span>
+        <ol>
+            <li>Direction</li>
+                    define the scrolling direction left and right 
+                    <h2><marquee direction="right" style="color: white;background-color: rgb(37, 27, 150);">こんにちは、皆さん。私はロイで、アンドラ出身です。最近、人工知能と機械学習の卒業を修了しました。 </marquee></h2>
+            <li>Behavior</li>
+                define how the text should scroll 
+                scroll -> (default) scroll continuously
+                slide -> scroll once, then stop
+                alternate -> bounces back and front.
+                <h2><marquee behavior="alternate" style="background-color: rgb(213, 231, 18);">नई सोच वाला जावा फुल स्टैक डेवलपर</marquee></h2>
+            <li>Scrollamount</li>
+                Define the speed of the scrolling.
+                <h3><marquee scrollamount="56" style="color: white;background-color: rgb(6, 201, 240);">Hruday Kalluri</marquee></h3>
+            <li>scrooldely</li>
+                define the delay between each movement.
+                <h3><marquee behavior="" scrolldelay="200" style="background-color: rgb(147, 70, 254); color: white;">i gone be king of the pairets</marquee></h3>
+            <li>loop</li>
+                Define how many times the marquee should run.
+                <h3><marquee loop="5" style="background-color: olive; color: white;">バーンカイ</marquee></h3> 
+        </ol>
+    </pre>
+    <br>
+</body>
+</html>

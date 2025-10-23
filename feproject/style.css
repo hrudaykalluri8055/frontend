@@ -1,0 +1,147 @@
+body {
+    padding: 0;
+    background: black;
+    color: white; 
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+    "section aside"
+    "article aside";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  max-width: 1500px;
+  width: 96vw;           
+  margin: 32px auto 0 auto; 
+  box-sizing: border-box;
+  background: transparent; 
+}
+
+header {
+    grid-area: header;
+    background: #0d0d0d;
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #222;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;       
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.logotext {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #141414;
+    padding: 6px 10px;
+    border-radius: 25px;
+    border: 1px solid #333;
+    width: 200px;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 0.95rem;
+    width: 100%;
+}
+.search-box button {
+    background: none;
+    border: none;
+    color: #d42b2b;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.search-box button:hover {
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 40px;
+}
+
+.nav-links a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s;
+    padding: 10px;
+}
+.nav-links a:hover {
+    color: #d42b2b;
+}
+
+nav {
+    grid-area: nav;
+    background: #202020;
+    padding: 10px 25px;
+}
+
+.left-col {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+section {
+  grid-area: section;
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+aside {
+  grid-area: aside;
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+  text-align: center;
+  padding: 10px;
+  
+}
+
+article {
+  grid-area: article;
+  background-color: black;
+  color: white;
+  border: 2px solid gray;
+  padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background: yellow;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}

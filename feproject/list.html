@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>List</title>
+        <header style="grid-area: header; background: #0d0d0d; padding: 18px 25px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #222; position: sticky; top: 0; z-index: 999;">
+            <div class="logo" style="display: flex; align-items: center; gap: 8px;">
+                <img src="../../wallpapers/Hrlogo.jpg" alt="logo" style="width: 45px; height: 45px; border-radius: 50%;">
+                <span class="logotext" style="color: white; font-size: 1.2rem; font-weight: 600; letter-spacing: 1px;">Roy</span>
+            </div>
+            <div class="search-box" style="display: flex; align-items: center; background: #141414; padding: 6px 10px; border-radius: 25px; border: 1px solid #333; width: 200px;">
+                <input type="text" placeholder="Search collections, styles..." style="background: transparent; border: none; outline: none; color: #fff; font-size: 0.95rem; width: 100%;">
+                <button style="background: none; border: none; color: #d42b2b; font-size: 1rem; cursor: pointer; transition: 0.3s;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='#d42b2b';">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div class="nav-links" style="display: flex; align-items: center; gap: 20px; padding-right: 40px;">
+                <a href="index.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">Home</a>
+                <a href="tags.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">Tags</a>
+                <a href="marquee.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">Marquee</a>
+                <a href="list.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">List</a>
+                <a href="multimedia.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">Multimedia</a>
+                <a href="table.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">Table</a>
+            </div>
+        </header>
+    </head>
+    <body style="background-color: black; color: white;">
+        <pre>
+            <h2>LIST:</h2>
+                Group related items together in a structured formatting.
+            <ol>
+                <li><h3>Ordered list:</h3>
+                    Items with numbers/letters/roman numerals.
+                    <div style="display: flex; gap: 40px; align-items: flex-start;">
+                        <div style="width: 25%;">
+                            <ol type="a">
+                                <li>type</li>
+                                <li>start</li>
+                                <li>reversed</li>
+                            </ol>
+                        </div>
+                        <div style="width: 25%;">
+                            <ol start="99">
+                                <li>Naruto</li>
+                                <li>One Piece</li>
+                                <li>Bleach</li>
+                            </ol>
+                        </div>
+                        <div style="width: 25%;">
+                            <ol reversed>
+                                <li>Your Name</li>
+                                <li>Suzumi</li>
+                                <li>Fire Works</li>
+                            </ol>
+                        </div>
+                        <div style="width: 25%;">
+                            <ol type="I">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JAVA SCRIPT</li>
+                            </ol>
+                        </div>
+                    </div>
+                </li>
+                <li><h3>Un Ordered list: </h3></li>
+                An unordered list displays items with bullets. using of "< u ></u>"
+                    <div style="display: flex; gap: 40px; align-items: flex-start;">
+                        <div style="width: 25%;">
+                            <ul type="square">
+                                <li>Hruday</li>
+                                <li>Dev</li>
+                                <li>Roy</li>
+                            </ul>
+                        </div>
+                        <div style="width: 25%;">
+                            <ul type="circle">
+                                <li>Hruday</li>
+                                <li>Dev</li>
+                                <li>Roy</li>
+                            </ul>
+                        </div>
+                        <div style="width: 25%;">
+                            <ul type="square">
+                                <li>Hruday</li>
+                                <li>Dev</li>
+                                <li>Roy</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><h3>Definition/Description list:</h3></li>
+                    <dl>
+                        <dt>used for terms and their Description</dt>
+                        <dd>
+                            dl -> Description list container,
+                            dt -> Description terms,
+                            dd -> Description Definition
+                        </dd>
+                    </dl>
+            </ol>
+        </pre>
+    </body>
+</html>

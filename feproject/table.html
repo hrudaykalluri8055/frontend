@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table</title>
+        <header style="grid-area: header; background: #0d0d0d; padding: 18px 25px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #222; position: sticky; top: 0; z-index: 999;">
+            <div class="logo" style="display: flex; align-items: center; gap: 8px;">
+                <img src="../../wallpapers/Hrlogo.jpg" alt="logo" style="width: 45px; height: 45px; border-radius: 50%;">
+                <span class="logotext" style="color: white; font-size: 1.2rem; font-weight: 600; letter-spacing: 1px;">Roy</span>
+            </div>
+            <div class="search-box" style="display: flex; align-items: center; background: #141414; padding: 6px 10px; border-radius: 25px; border: 1px solid #333; width: 200px;">
+                <input type="text" placeholder="Search collections, styles..." style="background: transparent; border: none; outline: none; color: #fff; font-size: 0.95rem; width: 100%;">
+                <button style="background: none; border: none; color: #d42b2b; font-size: 1rem; cursor: pointer; transition: 0.3s;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='#d42b2b';">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div class="nav-links" style="display: flex; align-items: center; gap: 20px; padding-right: 40px;">
+                <a href="index.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">Home</a>
+                <a href="tags.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">Tags</a>
+                <a href="marquee.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">Marquee</a>
+                <a href="list.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">List</a>
+                <a href="multimedia.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">Multimedia</a>
+                <a href="table.html" style="color: #bbb; text-decoration: none; font-size: 0.95rem; transition: 0.3s; padding: 10px;" onmouseover="this.style.color='#d42b2b';" onmouseout="this.style.color='#bbb';">Table</a>
+            </div>
+        </header>
+    </head>
+    <body style="background-color: black; color: white;">
+        <pre>
+            <h2>Table: </h2>
+            A table is used to display data in rows and columns
+            <h3>tags:</h3>
+            <ol>
+                <li><b>table:</b></li> Define table
+                <li><b>caption: </b></li> set a title for table.
+                <li><b>thead: </b></li>Group header rows
+                <li><b>tbody: </b></li>Group body
+                <li><b>tfoot: </b></li>fotter rows
+                <li><b>th: </b></li>table header
+                <li><b>tr: </b></li>table row
+                <li><b>td: </b></li>table data
+            </ol>
+            <h3>Attributes: </h3>
+            <ul>
+                <li><b>cellspacing: </b></li> space between each cell.
+                <li><b>cellpadding: </b></li> space between content and cell.
+                <li><b>rowspan: </b></li> merging 2 or more rows.
+                <li><b>colspan: </b></li> merging 2 or more columns.
+                <li><b>bgcolor: </b></li> set a background color
+                <li><b>align: </b></li>set the content.
+                <li><b>style: </b></li>applying style.
+                <li><b>border-colleapse: </b></li>merges adjacent cell border into a single border.
+                <li><b>border: </b></li>border for the table.
+                <li><b>height: </b></li>height of the table.
+                <li><b>width: </b></li>width of the table.
+            </ul>
+        </pre>
+        <div>
+            <center>
+                <caption><h2>Example - 1</h2></caption><br><br>
+                <table style="background-color: black; color: white;" border="3" width="50%" height="100" cellspacing="5" cellpadding="10">
+                    <tr style="background-color: rgb(142, 119, 242);">
+                        <th rowspan="3">Day</th>
+                        <th colspan="3">Seminar</th>
+                    </tr>
+                    <tr style="background-color: rgb(247, 122, 220);">
+                        <th colspan="2">schedule</th>
+                        <th rowspan="2">topic</th>
+                    </tr>
+                    <tr style="background-color: rgb(218, 249, 116);">
+                        <th>Begin</th>
+                        <th>End</th>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">Monday</td>
+                        <td rowspan="2">8:00 a.m.</td>
+                        <td rowspan="2">5:00 p.m.</td>
+                        <td>Introduction to XML</td>
+                    </tr>
+                    <tr>
+                        <td>Validity DTD and Relax NG</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="4">tuesday</td>
+                        <td>8:00am</td>
+                        <td>11:00am</td>
+                        <td rowspan="2" style="padding: 22px;">xpath</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">11:00am</td>
+                        <td rowspan="2">2:00pm</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">xls transformation</td>
+                    </tr>
+                    <tr>
+                        <td>2:00pm</td>
+                        <td>5:00pm</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>8:00 a.m.</td>
+                        <td>12:00 p.m.</td>
+                        <td>XSL Formatting Objects</td>
+                    </tr>
+                </table>
+            </center><br><br>
+        </div>
+        <div style="background-color: black; color: white; background-size:100% ;">
+            <center>
+                <caption><h2>Example -2</h2></caption><br><br>
+                <table style="background-color: black; color: white;" border="3" width="50%" hright="100" cellspacing="5" cellpadding="5">
+                    <thead style="background-color: rgb(0, 162, 255);">
+                        <tr>
+                            <th>Device</th>
+                            <th>Brand</th>
+                            <th>Specifications</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Smartphone</td>
+                            <td>Apple</td>
+                            <td>
+                                <table border="3" width="100%" hright="100%" cellspacing="3" cellpadding="5">
+                                    <thead style="background-color: orange;">
+                                        <th>model</th>
+                                        <th>storage</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>iphone 12 pro</td>
+                                            <td>256GB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>iphone SE</td>
+                                            <td>128GB</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Laptop</td>
+                            <td>HP</td>
+                            <td>15.6" Display</td>
+                        </tr>
+                        <tr>
+                            <td>Tablet</td>
+                            <td>Samsung</td>
+                            <td>10.5" Display</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center><br>
+        </div>
+    </body>
+</html>

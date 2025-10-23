@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+</head>
+<body style="background-color: black; color: white; font-family: Arial, sans-serif; margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center;">
+
+  <div style="background-color: #111; padding: 40px 50px; border-radius: 15px; box-shadow: 0 0 15px rgba(255,255,255,0.1); width: 300px; text-align: center;">
+    <h2 style="margin-bottom: 25px; color: #f1f1f1;">Login Form</h2>
+
+    <form action="" style="display: flex; flex-direction: column; gap: 15px;">
+      <div style="text-align: left;">
+        <label for="name" style="font-size: 14px;">Name <span style="color: red;">*</span></label><br>
+        <input type="text" id="name" style="width: 100%; padding: 8px; border-radius: 5px; border: none; outline: none; background-color: #222; color: white;">
+      </div>
+
+      <div style="text-align: left;">
+        <label for="email" style="font-size: 14px;">Email</label><br>
+        <input type="email" id="email" style="width: 100%; padding: 8px; border-radius: 5px; border: none; outline: none; background-color: #222; color: white;">
+      </div>
+
+      <div style="text-align: left;">
+        <label for="number" style="font-size: 14px;">Phone Number</label><br>
+        <div style="display: flex; gap: 5px;">
+          <input type="tel" value="+91" disabled style="width: 20%; text-align: center; background-color: #333; color: white; border: none; border-radius: 5px;">
+          <input type="tel" id="number" style="width: 80%; padding: 8px; border-radius: 5px; border: none; outline: none; background-color: #222; color: white;">
+        </div>
+      </div>
+
+      <div style="text-align: left;">
+        <label style="font-size: 14px;">Gender</label><br>
+        <input type="radio" name="Gender" id="male"><label for="male"> Male</label>
+        <input type="radio" name="Gender" id="female"><label for="female"> Female</label>
+        <input type="radio" name="Gender" id="other"><label for="other"> Other</label>
+      </div>
+
+      <div style="text-align: left;">
+        <label for="nation" style="font-size: 14px;">Country</label><br>
+        <select id="nation" style="width: 100%; padding: 8px; border-radius: 5px; border: none; background-color: #222; color: white;">
+          <option>India</option>
+          <option>UK</option>
+          <option>USA</option>
+          <option>Japan</option>
+          <option>China</option>
+        </select>
+      </div>
+      
+        <button type="button" style="margin-top: 10px; padding: 10px 20px; background-color: black; color: red; font-weight: bold; border: none; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(255,255,0,0.5); text-decoration: none; font-size: 15px;"
+            onmouseover="this.style.backgroundColor='orange'; this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 20px rgba(255,165,0,0.8)';"
+            onmouseout="this.style.backgroundColor='black'; this.style.transform='scale(1)'; this.style.boxShadow='0 0 5px rgba(255,255,0,0.5)';"
+            onclick="window.location.href='sign-up.html';">
+            Submit
+        </button>
+
+    </form>
+  </div>
+
+</body>
+</html>

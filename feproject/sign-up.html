@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+</head>
+<body style="background-color: black; color: white; font-family: Arial, sans-serif; margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center;">
+
+  <div style="background-color: #111; padding: 40px 50px; border-radius: 15px; box-shadow: 0 0 15px rgba(255,255,255,0.1); width: 300px; text-align: center;">
+    <h2 style="margin-bottom: 25px; color: #f1f1f1;">Sign Up</h2>
+
+    <form action="" style="display: flex; flex-direction: column; gap: 15px;">
+      <div style="text-align: left;">
+        <label for="name" style="font-size: 14px;">Name <span style="color: red;">*</span></label><br>
+        <input type="text" id="name" required style="width: 100%; padding: 8px; border-radius: 5px; border: none; outline: none; background-color: #222; color: white;">
+      </div>
+
+      <div style="text-align: left;">
+        <label for="email" style="font-size: 14px;">Email</label><br>
+        <input type="email" id="email" style="width: 100%; padding: 8px; border-radius: 5px; border: none; outline: none; background-color: #222; color: white;">
+      </div>
+
+      <div style="text-align: left;">
+        <label for="password" style="font-size: 14px;">Password</label><br>
+        <input type="password" id="password" style="width: 100%; padding: 8px; border-radius: 5px; border: none; outline: none; background-color: #222; color: white;">
+      </div>
+
+      <button type="button" style="margin-top: 10px; padding: 10px 20px; background-color: black; color: red; font-weight: bold; border: none; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 0 5px rgba(255,255,0,0.5); text-decoration: none; font-size: 15px;"
+            onmouseover="this.style.backgroundColor='orange'; this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 20px rgba(255,165,0,0.8)';"
+            onmouseout="this.style.backgroundColor='black'; this.style.transform='scale(1)'; this.style.boxShadow='0 0 5px rgba(255,255,0,0.5)';"
+            onclick="window.location.href='index.html';">
+            Submit
+        </button>
+    </form>
+  </div>
+
+</body>
+</html>
