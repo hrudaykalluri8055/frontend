@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(35, 248, 127);
+}
+.poster{
+    background-color: black;
+    color: white;
+    height: 50%;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+
+}
+.poster:hover{
+    background-color: green;
+    color: black;
+    text-align: center;
+    box-shadow: 2sec black solid ;
+    transform: scale(1.2);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    box-shadow: 20px 20px 20px rgba(255, 41, 41, 0.6);
+}
+.poster:hover img {
+    content: url("../bussiness.jpg");
+    opacity: 0.9;
+}
+
+.img{
+    height: 200px;
+    width: 350px;
+    text-align: center;
+}
+.task1 p{
+    color: red;
+}
+.task1 span{
+    color: blue;
+}
+.li{
+    color: white;
+}
+.para::after{
+    content: '💀';
+}
+.task4 h3 ~ p {
+  color: green;
+}
+.task5 li:first-child{
+    color: white;
+}
+.task5 li:last-child{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+button{
+    color: white;
+    background-color: black;
+}
+.task6 button:hover{
+    color: black;
+    background-color: yellow;
+    border-radius: 10px;
+}
+.task7 input{
+    border-radius: 10px;
+    background-color: yellow;
+}
+.task7 input:hover{
+    background-color: black;
+    color: white;
+}
+.task8 p span{
+    color: red;
+    font-size: 30px;
+}
+h1::before{
+    content:"☀";
+    color: yellow;
+}
